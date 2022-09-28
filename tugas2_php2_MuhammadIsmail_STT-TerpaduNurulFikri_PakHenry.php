@@ -137,7 +137,7 @@
 
 
             // Tunjangan Keluarga
-            if ($status == 'Menikah' && $jmlAnak >= 1 && $jmlAnak <= 2) $t_Keluarga = 0.5 * $gajiPokok;
+            if ($status == 'Menikah' && $jmlAnak >= 1 && $jmlAnak <= 2) $t_Keluarga = 0.05 * $gajiPokok;
             else if ($status == 'Menikah' && $jmlAnak >= 3 && $jmlAnak <= 5) $t_Keluarga = 0.1 * $gajiPokok;
             else if ($status == 'Menikah' && $jmlAnak >= 6) $t_Keluarga = 0.15 * $gajiPokok;
             else if ($status == 'Belum Menikah') $t_Keluarga = 0;
