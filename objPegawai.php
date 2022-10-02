@@ -64,7 +64,6 @@ $data_pegawai = [$p1, $p2, $p3, $p4, $p5];
                         <th><?= $no++ ?></th>
                         <?= $pegawai->mencetak() ?>
                     <?php endforeach ?>
-                    </tr>
             </tbody>
         </table>
     </div>
