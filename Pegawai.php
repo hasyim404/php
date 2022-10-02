@@ -49,7 +49,7 @@ class Pegawai
 
     public function setTunKel()
     {
-        $tunKel = $this->status == 'Menikah' ? 'Rp. ' . number_format(0.1 * $this->setGajiPokok(), 0, ',', '.') : "Nikah Dulu";
+        $tunKel = $this->status == 'Menikah' ? number_format(0.1 * $this->setGajiPokok(), 0, ',', '.') : "-";
         return $tunKel;
     }
 
@@ -61,7 +61,7 @@ class Pegawai
 
     public function setZakatProfesi()
     {
-        $zakatProfesi = $this->agama == 'Islam' && $this->setGajiKotor() >= 6000000 ? 0.025 * $this->setGajiKotor() : 0;
+        $zakatProfesi = $this->agama == 'Islam' && $this->setGajiKotor() >= 6000000 ? number_format(0.025 * $this->setGajiKotor(), 0, ',', '.') : "-";
         return $zakatProfesi;
     }
 
@@ -78,8 +78,8 @@ class Pegawai
             <td>' . $this->status . '</td>
             <td>Rp. ' . number_format($this->setGajiPokok(), 0, ',', '.') . '</td>
             <td>Rp. ' . number_format($this->setTunJab(), 0, ',', '.') . '</td>
-            <td>' . $this->setTunKel() . '</td>
-            <td>Rp. ' . number_format($this->setZakatProfesi(), 0, ',', '.') . '</td>
+            <td>Rp. ' . $this->setTunKel() . '</td>
+            <td>Rp. ' . $this->setZakatProfesi() . '</td>
             <td>Rp. ' . number_format($this->setGajiKotor(), 0, ',', '.') . '</td>
         </tr>';
     }
