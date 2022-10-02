@@ -61,7 +61,7 @@ $data_pegawai = [$p1, $p2, $p3, $p4, $p5];
                 $no = 1;
                 foreach ($data_pegawai as $pegawai) : ?>
                     <tr>
-                        <th><?= $no++ ?></th>
+                        <th><?= $no++ ?>.</th>
                         <?= $pegawai->mencetak() ?>
                     <?php endforeach ?>
             </tbody>
