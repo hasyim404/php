@@ -142,7 +142,7 @@ $p5 = [
     'Materi' => 'PHP',
     'Tugas' => 'Tugas ' . $pNo++ . '_Interface &<br>Layouting with Bootstrap',
     'Img' => 'assets/img/portfolio/tugas5-php.png',
-    'Github' => ''
+    'Github' => 'https://github.com/hasyim404/php/tree/Tugas6_Interface_Layouting'
 ];
 
 
