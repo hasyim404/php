@@ -1,0 +1,19 @@
+.header-two .navbar-fixed {
+    background-color: #343a40 !important;
+    padding: 15px !important;
+}
+
+.navbar-toggler {
+    border-radius: 10px !important;
+    background: #ffb600;
+}
+
+.top-bar {
+    padding: 8px 0;
+    background: #343a40 !important;
+    position: relative;
+}
+
+.top-bar {
+    padding: 0px !important;
+}

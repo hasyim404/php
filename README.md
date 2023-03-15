@@ -1,2 +1,2 @@
-# php
-tugas php dari kampus merdeka msib #3
+# SIINKA (Sinstem Informasi Inventaris Kantor)
+Tugas nini project dari kampus merdeka nfcomputer msib 3
